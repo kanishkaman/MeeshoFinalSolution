@@ -156,6 +156,7 @@ def initialize_bm25_index(query_pool_df: pd.DataFrame, ngram_size: int = 3):
 
 def get_bm25_candidates(prefix: str, n: int = 300) -> List[str]:
     """
+    Uses the global BM25 index to retrieve candidates.
     Get top n BM25 candidates for a given prefix.
     
     This is a convenience function that uses the globally initialized BM25 index.
